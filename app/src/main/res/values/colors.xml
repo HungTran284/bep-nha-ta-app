@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary1">#EA5C2B</color>
+    <color name="primary2">#FF7F3F</color>
+    <color name="primary3">#FFBF9F</color>
+    <color name="primary4">#FFDECE</color>
+    <color name="dark1">#000000</color>
+    <color name="dark2">#6F6F6F</color>
+    <color name="dark3">#EDEDED</color>
+    <color name="dark4">#DFDBDC</color>
+    <color name="dark5">#BFBFBF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#F26522</color>
+    <color name="primary1_shadow">#EC825D</color>
+    <color name="black">#222222</color>
+    <color name="gray_700">#666666</color>
+    <color name="gray_500">#BFBFBF</color>
+    <color name="wallet_momo">#C3077A</color>
+    <color name="wallet_zalopay">#0088FF</color>
+</resources>

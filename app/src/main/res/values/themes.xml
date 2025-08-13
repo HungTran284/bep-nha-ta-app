@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BepNhaTaApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary1</item>
+        <item name="android:statusBarColor">@color/primary1</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.BepNhaTaApp" parent="Base.Theme.BepNhaTaApp" />
+
+    <!-- Theme without window preview to tránh flash trắng khi mở Activity -->
+    <style name="Theme.BepNhaTaApp.NoPreview" parent="Theme.BepNhaTaApp">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+</resources>

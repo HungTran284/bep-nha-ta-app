@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã đơn hàng:"
+                android:textColor="@color/dark1"
+                android:textSize="@dimen/body1"
+                style="@style/Body.Bold.Ag1"/>
+
+            <TextView
+                android:id="@+id/productCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="GNLBK2N_1"
+                android:textColor="@color/dark1"
+                android:textSize="@dimen/body1" />
+
+            <TextView
+                style="@style/Body.Regular.Ag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Chờ lấy hàng"
+                android:textColor="@color/primary1"
+                android:textSize="@dimen/body1" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProductInner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginVertical="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Huỷ đơn hàng"
+                android:textColor="@color/primary1"
+                android:backgroundTint="@color/white"
+                android:textSize="@dimen/body2"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/primary1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng số tiền:"
+                android:textSize="@dimen/body1"
+                android:textColor="@color/dark1"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/totalPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90.000đ"
+                android:textSize="@dimen/body1"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:textColor="@color/dark1"
+                android:gravity="end"
+                style="@style/Body.Bold.Ag4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary1"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

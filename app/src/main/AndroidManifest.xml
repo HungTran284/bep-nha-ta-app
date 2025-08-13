@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bepnhataapp">
+    <!-- Quyền truy cập trạng thái mạng -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Permissions for camera & gallery -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BepNhaTaApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".features.recipes.RecipeCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.recipes.RecipeDetail"
+            android:exported="false" />
+        <activity
+            android:name=".features.recipes.RecipeList"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.review_order"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.cancel_order"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.returned"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.delivered"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.keep_track_order"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.out_for_delivery"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.wait_pickup"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.wait_confirm"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.order_detail"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.change_password"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.opt_phone"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.change_infor"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.account_infor"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.edit_address"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.address_detail"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_pinfor.shipping_address"
+            android:exported="false" />
+        <activity
+            android:name=".features.opening.first_opening"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.opening.second_opening"
+            android:exported="false" />
+        <activity
+            android:name=".features.opening.third_opening"
+            android:exported="false" />
+        <activity
+            android:name=".features.opening.fourth_opening"
+            android:exported="false" />
+        <activity
+            android:name=".features.home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.tools.ToolsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.blog.BlogCommentsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.manage_account.ManageAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.login.GooglePhoneInputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.customeridea.CustomerIdeaActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".features.mealplan.MealPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.recipes.RecipesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.products.FilterProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.products.ProductActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BepNhaTaApp.NoPreview" />
+        <activity
+            android:name=".features.voucher.VoucherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.mealplan.LoadMealPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.mealplan.LoadMealPlanReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.policy.PolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.mealplan.MealPlanContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.mealplan.MealPlanWizardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.voucher.VoucherSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.voucher.VoucherListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.voucher.VoucherDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.checkout.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.checkout.ShippingInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.checkout.ConfirmPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.checkout.PaymentSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.checkout.WalletPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.point.PointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.point.PointHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.products.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.products.AllReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.address.AddressSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.offline.OfflineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.offline.DownloadedContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.offline.RecipeDetailOfflineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.message.notification_list"
+            android:exported="false" />
+        <activity
+            android:name=".features.message.conversation"
+            android:exported="false" />
+        <activity
+            android:name=".features.faq.FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_r_p_b.manage_recipe"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_r_p_b.manage_product"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_r_p_b.manage_blog"
+            android:exported="false" />
+        <activity
+            android:name=".features.blog.BlogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.blog.BlogDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.login.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.login.NewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.login.AuthenticationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.login.AccountInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.recipes.RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.bepnhataapp.features.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.manage_order.ManageOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.favorite.FavoriteActivity"
+            android:exported="false" />
+        <receiver android:name="com.example.bepnhataapp.common.utils.ReminderReceiver" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- Firebase Cloud Messaging service -->
+        <service
+            android:name=".common.utils.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.bepnhataapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

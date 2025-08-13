@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <!-- Ảnh món ăn lớn bo góc trên -->
+        <ImageView
+            android:id="@+id/imageViewRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_placeholder"
+            android:background="@drawable/rounded_img_16" />
+
+        <!-- Tên món ăn -->
+        <TextView
+            android:id="@+id/textViewRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên món ăn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp"/>
+
+        <!-- Hàng tag + nút xóa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="16dp">
+
+            <!-- Tag thời gian -->
+            <LinearLayout
+                android:id="@+id/layoutTagTime"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_item_radius8"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="4dp"
+                android:layout_marginEnd="8dp">
+                <ImageView
+                    android:id="@+id/imgTagTime"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_time" />
+                <TextView
+                    android:id="@+id/tvTagTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 phút"
+                    android:textColor="#E7642F"
+                    android:textSize="13sp"
+                    android:layout_marginStart="3dp"/>
+            </LinearLayout>
+
+            <!-- Tag benefit -->
+            <LinearLayout
+                android:id="@+id/layoutTagBenefit"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_item_radius8"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="4dp"
+                android:layout_marginEnd="8dp">
+                <ImageView
+                    android:id="@+id/imgTagBenefit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_bone" />
+                <TextView
+                    android:id="@+id/tvTagBenefit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bổ máu"
+                    android:textColor="#E7642F"
+                    android:textSize="13sp"
+                    android:layout_marginStart="3dp"/>
+            </LinearLayout>
+
+            <!-- Tag level -->
+            <LinearLayout
+                android:id="@+id/layoutTagLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_item_radius8"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="4dp"
+                android:layout_marginEnd="8dp">
+                <ImageView
+                    android:id="@+id/imgTagLevel"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_medium_time" />
+                <TextView
+                    android:id="@+id/tvTagLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trung bình"
+                    android:textColor="#E7642F"
+                    android:textSize="13sp"
+                    android:layout_marginStart="3dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Nút xóa bo tròn nền xám đậm -->
+            <Button
+                android:id="@+id/btnDeleteRecipe"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Xóa"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:background="@drawable/bg_button_gray_round"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

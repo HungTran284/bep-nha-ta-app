@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/tvVoucherTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Đặt món"
+        android:textSize="15sp"
+        android:textColor="#222222"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/tvPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+100 điểm"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#F36B22"
+        android:gravity="end" />
+</LinearLayout> 
