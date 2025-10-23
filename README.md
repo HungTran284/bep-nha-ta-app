@@ -15,7 +15,8 @@
 
 
 ## Dataset
-<a href="" target="_blank">Link Datasets</a>
+<a href="https://www.kaggle.com/datasets/cameronseamons/electronic-sales-sep2023-sep2024" target="_blank">Link Dataset từ Kaggle</a>
+<a href="" target="_blank">Link Dataset của nhóm</a>
 - "Electronic_sales_Sep2023-Sep2024.csv": Dataset ban đầu để nhóm thực hiện việc xử lý
 - "preprocessed_data.xlsx": Dataset sau khi đã tiền xử lý trước khi thực nghiệm mô hình.
 - "forecast_12weeks_results.xlsx": Dataset dự đoán kết quả số lượng 12 tuần tiếp theo bằng 2 mô hình LSTM và SARIMA
