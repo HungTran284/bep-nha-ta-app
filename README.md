@@ -7,7 +7,8 @@
 "251MI1701_Group04_SourceCode_FinalProject.ipynb": Source code này bao gồm toàn bộ quy trình thực hiện của nhóm bằng Python, bắt đầu từ EDA, Pre-processing đến triển khai 2 mô hình LSTM và SARIMA cuối cùng là so sánh 2 kết quả đánh giá mô hình với nhau.
 
 ## Trực quan hóa dữ liệu bằng Power BI
-- <a href="https://app.powerbi.com/view?r=eyJrIjoiZTY3NDFmMGItNDUyMi00MzIxLWEyZWUtNTRiMWU5YWU0NzFkIiwidCI6ImZhNjk0NGFmLWNjN2MtNGNkOC05MTU0LWMwMTEzMjc5ODkxMCIsImMiOjl9" target="_blank">Link Power BI online</a>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiZTY3NDFmMGItNDUyMi00MzIxLWEyZWUtNTRiMWU5YWU0NzFkIiwidCI6ImZhNjk0NGFmLWNjN2MtNGNkOC05MTU0LWMwMTEzMjc5ODkxMCIsImMiOjl9" target="_blank">Link Power BI online</a>
+<br>
 <br>
 “251MI1701_Group04_Dashboard_FinalProject.pbix”: File PowerBI mô tả những dữ liệu và phân tích về doanh số và xu hướng thông qua những biểu đồ trong PowerBI
 
@@ -19,8 +20,8 @@
 - "forecast_12weeks_results.xlsx": Dataset dự đoán kết quả số lượng 12 tuần tiếp theo bằng 2 mô hình LSTM và SARIMA
 
 ## Other:
-"process.draw.io.jpg": hình ảnh toàn bộ quy trình thực hiện đồ án của nhóm
-"Gantt chart.xlsx": chi tiết biểu đồ Gantt quá trình thực hiện đồ án của nhóm
+- "process.draw.io.jpg": hình ảnh toàn bộ quy trình thực hiện đồ án của nhóm
+- "Gantt chart.xlsx": chi tiết biểu đồ Gantt quá trình thực hiện đồ án của nhóm
 
 ## Conclusion
 Kết quả cho thấy hai mô hình chuỗi thời gian có mức độ dự đoán khác nhau về xu hướng nhập hàng. Mô hình LSTM cho độ chính xác cao hơn. Dựa trên kết quả này cùng với những phân tích và khuyến nghị, doanh nghiệp có thể điều chỉnh kế hoạch nhập hàng theo từng giai đoạn và từng nhóm hàng giúp tối ưu chi phí và hạn chế tình trạng tồn kho.
