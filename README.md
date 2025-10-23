@@ -1,6 +1,6 @@
 # Ứng dụng mô hình chuỗi thời gian (SARIMA, LSTM) để dự báo nhu cầu và tối ưu quyết định nhập hàng trong thương mại điện tử.
 ## Tổng quan
-Đồ án thực hiện quy trình làm sạch dữ liệu, EDA, Pre-processing và dự đoán bằng 2 mô hình liên quan đến chuỗi thời gian khác nhau, qua đó cung cấp cái nhìn về hiệu quả của từng mô hình. Cuối cùng là đưa ra những phân tích và khuyến nghị trong vấn đề nhập hàng dựa tho dữ liệu đã dự đoán.
+Đồ án thực hiện quy trình làm sạch dữ liệu, EDA, Pre-processing và dự đoán bằng 2 mô hình liên quan đến chuỗi thời gian khác nhau là SARIMA và LSTM, qua đó cung cấp cái nhìn về hiệu quả của từng mô hình. Cuối cùng là đưa ra những phân tích và khuyến nghị trong vấn đề nhập hàng dựa theo dữ liệu đã dự đoán.
 
 ## Files
 ### Source code
